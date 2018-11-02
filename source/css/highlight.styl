@@ -19,6 +19,7 @@ color-border = lighten(greyishBlue, 60%)
 code-background = darken(backgroundColor, 5%)
 
 $code-block
+  letter-spacing: 1px
   background: code-background
   padding: 15px
   overflow: auto
@@ -34,7 +35,6 @@ code
 	background-color: code-background
 	border-radius: 0.2em
 
-
 .highlight .line.marked
   background-color: darken(code-background, 10%)
 
@@ -45,12 +45,10 @@ code
 article
   pre, code
 	  font-family: fontsMono
-	  
   code
     background: color-background
     text-shadow: 0 1px #fff
     padding: 0 0.3em
-    letter-spacing: .1em
   pre
     @extend $code-block
     code
